@@ -41,7 +41,7 @@ export class TodosListComponent extends React.Component {
           Name:
           <input type="text" ref={(input) => this.input = input} />
         </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Pray" />
       </form>
       </div>
     )
