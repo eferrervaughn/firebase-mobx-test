@@ -24,14 +24,19 @@ export class TodosListComponent extends React.Component {
     todos.add(name)
   };
 
+  increment = (id) => {
+    todos.increment(id)
+  };
+
   render() {
     // This makes it delete when its clicked on
     return (
       <div>
       <ul>
         {map(todos.json, (it, key) => (
-          <li>{it.name}
+          <li>{it[0]+" "+it[2]}
           <input type="button" onClick={this.del.bind(this, key)} key={key} value="delete"/>
+          <input type="button" onClick={ () => {this.increment(key)}} value="+"/>
           </li>
           )
         )}

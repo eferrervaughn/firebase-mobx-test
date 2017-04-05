@@ -15,6 +15,7 @@ const root = firebase.database().ref();
 // Assigning speficic node to todos , add or refs here
 const todos = firebase.database().ref('todos');
 
+
 // NOTICE - Add ref to the following nodes: prayer, praise, user, location??
 
 const Fb = {
